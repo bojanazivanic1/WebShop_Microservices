@@ -1,0 +1,238 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5125"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/auth/register",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Auth/register",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5038
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/auth/login",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Auth/login",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5038
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/auth/google-login",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Auth/google-login",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5038
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/user",
+      "UpstreamHttpMethod": [ "Put", "Get" ],
+      "DownstreamPathTemplate": "/api/User",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5038
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/user/verify-seller",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/User/verify-seller",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5038
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/user/get-verified-sellers",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/User/get-verified-sellers",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5038
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/user/get-waiting-sellers",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/User/get-waiting-sellers",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5038
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/user/get-all-users",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/User/get-all-users",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5038
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/admin/get-all-orders",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Admin/get-all-orders",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/buyer/add-order",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Buyer/add-order",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/buyer/cancel-order/{orderId}",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Buyer/cancel-order/{orderId}",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/buyer/get-old-orders",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Buyer/get-old-orders",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/buyer/get-new-orders",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Buyer/get-new-orders",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/buyer/get-products",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Buyer/get-products",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/seller/add-product",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Seller/add-product",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/seller/remove-product/{productId}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/Seller/remove-product/{productId}",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/seller/get-product/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Seller/get-product/{id}",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/seller/get-products",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Seller/get-products",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/seller/update-product",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/Seller/update-product",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/seller/get-old-orders",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Seller/get-old-orders",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/seller/get-new-orders",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Seller/get-new-orders",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5181
+        }
+      ]
+    }
+  ]
+}
