@@ -66,7 +66,6 @@ builder.Services.AddDbContext<UserDbContext>(options =>
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
-builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddScoped<IUserDbProvider, UserDbProvider>();
 builder.Services.AddScoped<DbContext, UserDbContext>();
 

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Common;
 using ProductsControl.DTO;
 using ProductsControl.Infrastructure.IProviders;
 using ProductsControl.Interfaces;
@@ -10,14 +11,12 @@ namespace ProductsControl.Services
     {
         private readonly IProductDbProvider _productDbProvider;
         private readonly IOrderDbProvider _orderDbProvider;
-        private readonly IImageService _imageService;
         private readonly IMapper _mapper;
 
-        public SellerService(IProductDbProvider productDbProvider, IOrderDbProvider orderDbProvider, IImageService imageService, IMapper mapper)
+        public SellerService(IProductDbProvider productDbProvider, IOrderDbProvider orderDbProvider, IMapper mapper)
         {
             _productDbProvider = productDbProvider;
             _orderDbProvider = orderDbProvider;
-            _imageService = imageService;
             _mapper = mapper;
         }
 
@@ -32,7 +31,7 @@ namespace ProductsControl.Services
 
             if (addProductDto.ImageFile != null)
             {
-                product.Image = await _imageService.ConvertToByteArray(addProductDto.ImageFile);
+                product.Image = await ImageConverter.ConvertToByteArray(addProductDto.ImageFile);
             }
             else
             {
@@ -92,7 +91,7 @@ namespace ProductsControl.Services
             product.Amount = updateProductDto.Amount;
             if (updateProductDto.ImageFile != null && updateProductDto.ImageFile.Length != 0)
             {
-                product.Image = await _imageService.ConvertToByteArray(updateProductDto.ImageFile);
+                product.Image = await ImageConverter.ConvertToByteArray(updateProductDto.ImageFile);
             }
             else if (updateProductDto.Image != null && updateProductDto.Image.Length != 0)
             {

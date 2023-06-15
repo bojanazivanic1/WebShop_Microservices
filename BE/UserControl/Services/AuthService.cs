@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.SignalR;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
@@ -12,6 +11,7 @@ using UserControl.Models;
 using Google.Apis.Auth;
 using UserControl.DTO;
 using System.Security.Cryptography;
+using Common;
 
 namespace UserControl.Services
 {
@@ -20,16 +20,14 @@ namespace UserControl.Services
         private static IUserDbProvider? _userDbProvider;
         private static IEmailService? _emailService;
         private readonly IConfiguration _configuration;
-        private readonly IImageService _imageService;
         private readonly IMapper _mapper;
 
-        public AuthService(IUserDbProvider userDbProvider, IConfiguration configuration, IMapper mapper, IEmailService emailService, IImageService imageService)
+        public AuthService(IUserDbProvider userDbProvider, IConfiguration configuration, IMapper mapper, IEmailService emailService)
         {
             _userDbProvider = userDbProvider;
             _emailService = emailService;
             _configuration = configuration;
             _mapper = mapper;
-            _imageService = imageService;
         }
 
         public async Task<string> LoginUserAsync(LoginUserDto request)
@@ -81,7 +79,7 @@ namespace UserControl.Services
 
             if (request.ImageFile != null)
             {
-                user.Image = await _imageService.ConvertToByteArray(request.ImageFile);
+                user.Image = await ImageConverter.ConvertToByteArray(request.ImageFile);
             }
             else
             {

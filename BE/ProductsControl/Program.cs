@@ -65,7 +65,6 @@ builder.Services.AddDbContext<ProductDbContext>(options =>
 builder.Services.AddScoped<ISellerService, SellerService>();
 builder.Services.AddScoped<IBuyerService, BuyerService>();
 builder.Services.AddScoped<IAdminService, AdminService>();
-builder.Services.AddScoped<IImageService, ImageService>();
 
 builder.Services.AddScoped<IProductDbProvider, ProductDbProvider>();
 builder.Services.AddScoped<IOrderDbProvider, OrderDbProvider>();

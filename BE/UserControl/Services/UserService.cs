@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Common;
 using UserControl.DTO;
 using UserControl.Infrastructure.IProviders;
 using UserControl.Interfaces;
@@ -12,15 +13,13 @@ namespace UserControl.Services
         private readonly IUserDbProvider _userDbProvider;
         private readonly IAuthService _authService;
         private readonly IEmailService _emailService;
-        private readonly IImageService _imageService;
         private readonly IMapper _mapper;
 
-        public UserService(IUserDbProvider userDbProvider, IAuthService authService, IEmailService emailService, IImageService imageService, IMapper mapper)
+        public UserService(IUserDbProvider userDbProvider, IAuthService authService, IEmailService emailService, IMapper mapper)
         {
             _userDbProvider = userDbProvider;
             _authService = authService;
             _emailService = emailService;
-            _imageService = imageService;
             _mapper = mapper;
         }
 
@@ -55,7 +54,7 @@ namespace UserControl.Services
 
             if (updateUserDto.ImageFile != null && updateUserDto.ImageFile.Length != 0)
             {
-                user.Image = await _imageService.ConvertToByteArray(updateUserDto.ImageFile);
+                user.Image = await ImageConverter.ConvertToByteArray(updateUserDto.ImageFile);
             }
             else if (updateUserDto.Image != null && updateUserDto.Image.Length != 0)
             {
