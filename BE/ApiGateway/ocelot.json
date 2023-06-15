@@ -1,6 +1,6 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:5125"
+    "BaseUrl": "https://localhost:7026"
   },
   "Routes": [
     {
@@ -10,7 +10,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5038
+          "Port": 7228
         }
       ]
     },
@@ -21,7 +21,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5038
+          "Port": 7228
         }
       ]
     },
@@ -32,7 +32,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5038
+          "Port": 7228
         }
       ]
     },
@@ -43,7 +43,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5038
+          "Port": 7228
         }
       ]
     },
@@ -54,7 +54,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5038
+          "Port": 7228
         }
       ]
     },
@@ -65,7 +65,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5038
+          "Port": 7228
         }
       ]
     },
@@ -76,7 +76,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5038
+          "Port": 7228
         }
       ]
     },
@@ -87,7 +87,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5038
+          "Port": 7228
         }
       ]
     },
@@ -98,7 +98,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -109,7 +109,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -120,7 +120,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -131,7 +131,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -142,7 +142,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -153,7 +153,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -164,7 +164,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -175,7 +175,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -186,7 +186,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -197,7 +197,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -208,7 +208,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -219,7 +219,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     },
@@ -230,7 +230,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5181
+          "Port": 7229
         }
       ]
     }
