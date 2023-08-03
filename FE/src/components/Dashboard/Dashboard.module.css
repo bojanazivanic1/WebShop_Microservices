@@ -1,0 +1,28 @@
+.dashboard {
+    margin-bottom: 1rem;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dashboard:first-child {
+    margin-top: 0;
+  }
+  
+  .dashboard:last-child {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    margin: 10px;
+  }
+
+  .dashboardProducts {
+    margin-bottom: 1rem;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }

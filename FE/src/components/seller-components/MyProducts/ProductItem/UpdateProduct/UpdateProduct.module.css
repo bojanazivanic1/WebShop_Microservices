@@ -1,0 +1,74 @@
+.updateProduct {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #948989; 
+}
+ 
+.control {
+  display: flex;
+  align-items:stretch;
+  flex-direction: column;
+}
+
+.control label,
+.control input,
+.control p {
+  display: block;
+}
+
+.control label,
+.control p,
+.control textarea {
+  font-weight: bold;
+  flex: 1;
+  color: #2c2b2b;
+  margin-bottom: 0.5rem;
+}
+
+.control p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.control input,
+.control textarea {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.inputFile input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  opacity: 0;
+}
+
+.inputFile label {
+  font-weight: bold;
+  flex: 1;
+  color: #2c2b2b;
+  margin-bottom: 0.5rem;
+}
+
+.inputFile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+
+.inputFile span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.control input:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #f6dbfc;
+}

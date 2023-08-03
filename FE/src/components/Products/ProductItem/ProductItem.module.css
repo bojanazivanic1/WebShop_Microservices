@@ -1,0 +1,37 @@
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .product h3 {
+    margin: 0 0 0.25rem 0;
+  }
+
+  .product img {
+    width: 180px;
+    height: inherit;
+    border-radius: 10px;
+  }
+  
+  .textDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .description {
+    font-style: italic;
+  }
+  
+  .price {
+    margin-top: 0.25rem;
+    font-weight: bold;
+    color: #741188;
+    font-size: 1.25rem;
+  }

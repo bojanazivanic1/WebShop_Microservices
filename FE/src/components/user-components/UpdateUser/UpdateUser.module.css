@@ -1,0 +1,93 @@
+.register {
+  width: 90%;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #948989; 
+}
+
+.control {
+display: flex;
+align-items:stretch;
+flex-direction: column;
+}
+
+.control label,
+.control input,
+.control p {
+display: block;
+}
+
+.control label,
+.control p {
+  font-weight: bold;
+  flex: 1;
+  color: #2c2b2b;
+  margin-bottom: 0.5rem;
+}
+
+.control p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.control input {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.control select {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.control option {
+  color: #464646;
+  background: #f6f6f6;
+  font: inherit;
+}
+
+.control .error {
+color: rgb(148, 17, 39);
+font-size: 0.875rem;
+margin-bottom: 1x;
+}
+
+.inputFile input[type="file"] {
+font-size: 100px;
+position: absolute;
+opacity: 0;
+}
+
+.inputFile label {
+font-weight: bold;
+flex: 1;
+color: #2c2b2b;
+margin-bottom: 0.5rem;
+}
+
+.inputFile img {
+width: 100px;
+height: 100px;
+border-radius: 10%;
+}
+
+.inputFile span {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.control input:focus {
+outline: none;
+border-color: #4f005f;
+background: #f6dbfc;
+}
+

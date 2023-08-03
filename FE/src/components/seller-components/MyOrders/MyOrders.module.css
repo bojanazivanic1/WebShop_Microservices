@@ -1,0 +1,26 @@
+.myOrders {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newOrdersCard table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .newOrdersCard th,
+  .newOrdersCard td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .newOrdersCard th {
+    font-weight: bold;
+  }
+  
+  .newOrdersCard p {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
